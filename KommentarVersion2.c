@@ -70,7 +70,7 @@ int main(void) {
         printf("Monat:  ");                                                             //ausgabe an den nutzer als beschriftung der tabelle
         for(int monat = 0; monat<12;++monat) {                                              
             printf("   %s   |", monatsnamen[monat]);                                    //ausgabe der monate
-            fprintf(out, "   %s  |", monatsnamen[monat]);                               //ausgabe der monate zum speichern in der zuvor eröffneten datei
+            /*fprintf(out, "   %s  |", monatsnamen[monat]);*/                              //ausgabe der monate zum speichern in der zuvor eröffneten datei
         }
         printf("\n");                                                                   //Absatz 
 
@@ -83,7 +83,7 @@ int main(void) {
             double mittelwertMonat = mittlereGlobaleStrahlung(monate[monat], anzahlTage);               //mittlere globale strahlung ist der mittelwert über die bestrahlung der erde an einem bestimmten ort über einen bestimmten zeitraum
             summeMonatsmittel += wert;                                                  //die summe des monatsmittel wird errechnet durch stetiges addieren der einzelnen tage
             printf(" %6.2lf  |", wert);                                                 //ausgabe an den nutzer über die ertragssumme in form einer tabelle durch welche der zugehörige monat klar erkennbar ist
-            fprintf(out, "%6.2lf", wert);                                               //-"- speicherung in der datei
+            /*fprintf(out, "%6.2lf", wert);*/                                               //-"- speicherung in der datei
 
         }
 
